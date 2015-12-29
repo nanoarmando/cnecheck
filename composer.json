@@ -1,0 +1,20 @@
+{
+    "name": "nanoarmando/cnecheck",
+    "description": "A CNE check library",
+    "type": "library",
+    "keywords": ["cne"],
+    "homepage": "https://gitlab.com/nanoarmando/cnecheck.git",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "authors": [
+        {
+            "name": "Jose Bianco",
+            "email": "nanox86@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"CNE\\": "src/"}
+    }
+}
