@@ -54,7 +54,7 @@ class Cne
      * Puede ser accedida por metodos difentes, CURL & FOPEN
      * Ver 'allow_url_fopen'
      * @param $method
-     * @return string
+     * @return array
      */
     public function search($method = FILE_METHOD)
     {
@@ -66,7 +66,7 @@ class Cne
             $result = strip_tags($this->getCurlData($url));
         }
         $final = $this->refactorData($result);
-        return json_encode($final);
+        return $final;
     }
 
     /**

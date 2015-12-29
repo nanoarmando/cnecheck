@@ -10,7 +10,7 @@ require "vendor/autoload.php";
 use CNE\Cne;
 
 $search = new Cne('V','xxxxxxxx');
-$newSearch->search();
+$search->search();
 ```
 ## Licencia ##
 Licencia MIT.
