@@ -58,6 +58,7 @@ class Cne
      */
     public function search($method = FILE_METHOD)
     {
+        header('Content-type: application/json');
         $url = "http://www.cne.gov.ve/web/registro_electoral/ce.php?nacionalidad=$this->nationality&cedula=$this->dni";
 
         if ($method) {
@@ -66,7 +67,7 @@ class Cne
             $result = strip_tags($this->getCurlData($url));
         }
         $final = $this->refactorData($result);
-        return $final;
+        return json_encode($final);
     }
 
     /**
