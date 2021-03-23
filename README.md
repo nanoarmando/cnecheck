@@ -1,7 +1,7 @@
 ## About ##
 A library that allows you to check CNE website and get the information in JSON format.
 ## Installation##
-    composer require nanoarmando/cnecheck
+    composer require nanoarmando/cnecheck.
 ## Use ##
 ```php
 require "vendor/autoload.php";
